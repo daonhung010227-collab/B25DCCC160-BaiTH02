@@ -1,16 +1,31 @@
-# React + Vite
+# Bài thực hành 02 (TH02): Ứng dụng xem thời tiết
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Sinh viên: Đào Thị Nhung
+- Mã sinh viên: B25DCCC160
+- Môn: Lập trình Web (RIPT1306-20261-05)
 
-Currently, two official plugins are available:
+## Giới thiệu
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Ứng dụng React hiển thị thời tiết của 8 thành phố Việt Nam, dữ liệu lấy từ API [Open-Meteo](https://open-meteo.com/en/docs) (miễn phí, không cần API key).
 
-## React Compiler
+## Chức năng
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Danh sách 8 thành phố, thành phố đang chọn được làm nổi bật
+- Thời tiết hiện tại: biểu tượng, mô tả, nhiệt độ, độ ẩm, tốc độ gió, thời điểm cập nhật
+- Dự báo 7 ngày: thứ, ngày, biểu tượng, nhiệt độ cao nhất và thấp nhất
+- Các trạng thái: chưa chọn, đang tải, lỗi (có nút Thử lại)
+- Đổi °C / °F mà không gọi lại API
+- Giao diện responsive (từ 768px: 2 cột; nhỏ hơn: xếp dọc)
 
-## Expanding the ESLint configuration
+## Công nghệ
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+React, Vite, Open-Meteo API
+
+## Cách chạy
+
+```bash
+npm install
+npm run dev
+```
+
+Sau đó mở http://localhost:5173
